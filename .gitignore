@@ -1,0 +1,27 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+
+# large data & weights — kept out of git on purpose, repo push was
+# taking forever with these in the object store (data/ alone is ~80G)
+data/
+cache/
+models/
+archive/
+Dhaka/
+
+# vendored third-party repo, has its own nested .git
+road_extraction/
+
+# generated figures/outputs, keep the generator scripts (images/*.py)
+images/*.png
+images/*.jpg
+
+# stray artifacts that shouldn't live at repo root
+*.zip
+*.log
+*.pth
+*.tif
+*.tiff
+*.gpkg
